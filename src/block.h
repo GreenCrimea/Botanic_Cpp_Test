@@ -12,7 +12,7 @@ Inherits Index, Timestamp, Proof, Previous_proof, Contracts_Array
 #include <string>
 #include "Contracts.h"
 using namespace std;
-
+const int BLOCKSIZE {2};
 
 class Index {
 
@@ -110,31 +110,23 @@ class Previous_Proof {
 };
 
 
-class Contracts_Array {
+class Contracts_Array{
 
     public:
         //constructors
         Contracts_Array()=default;
-        Contracts_Array(Contracts contracts_array[]){
-            for(int i; i < block_size; ++i){
-                this->contracts_array[i] = contracts_array[i];
-            }
-        }
 
-        //destructor
-        ~Contracts_Array()=default;
+        void initialise_array(int index, Contracts contract){
+            contracts_array[index] = contract;
+        }
 
         //getter
-        int get_block_size(){
-            return block_size;
-        }
         Contracts get_contracts_array(int index){
             return contracts_array[index];
         }
 
     private:
-        int block_size {2};
-        Contracts contracts_array[];
+        Contracts contracts_array[BLOCKSIZE];
 };
 
 
@@ -147,6 +139,15 @@ class Block :   public Index,
     public:
         //constructors
         Block()=default;
+        Block(  double index,
+                string_view timestamp,
+                string_view proof,
+                string_view previous_proof):
+            Index(index),
+            Timestamp(timestamp),
+            Proof(proof),
+            Previous_Proof(previous_proof),
+            Contracts_Array(){}
 
         //destructor
         ~Block()=default;
@@ -160,8 +161,7 @@ class Block :   public Index,
             cout << "proof: " << get_proof() << endl;
             cout << "Previous proof: " << get_previous_proof() << endl;
             cout << "Contracts: " << endl;
-            int block_size = get_block_size();
-            for(int i; i < block_size; ++i){
+            for(int i; i < BLOCKSIZE; ++i){
                 cout << "contract " << i << endl;     
                 cout << "===============" << endl;
                 get_contracts_array(i).print_contract();

@@ -8,7 +8,7 @@ Value cannot be changed once object is defined.
 
 Inherited by Block.
 
-Inherits Type, Transaction_ID, Reciever_Wallet, Sender_Wallet,
+Inherits types, Transaction_ID, Reciever_Wallet, Sender_Wallet,
 Sender_Signature, Data, Reward
 */
 #include <string_view>
@@ -160,31 +160,31 @@ class Transaction_ID{
 };
 
 
-class Type{
+class Type_t{
 
     public:
         //constructor
-        Type()=default;
-        Type(string_view type){
-            this->type = type;
+        Type_t()=default;
+        Type_t(string_view t_new){
+            type_t = t_new;
         }
 
         //destructor
-        ~Type()=default;
+        ~Type_t()=default;
 
         //getter
-        string get_type(){
-            return type;
+        string get_type_t(){
+            return type_t;
         }
 
     private:
 
         //value
-        string type{"TRANSACTION"};
+        string type_t{"TRANSACTION"};
 };
 
 
-class Contracts :   public Type, 
+class Contracts :   public Type_t, 
                     public Transaction_ID,
                     public Reciever_Wallet,
                     public Sender_Wallet,
@@ -195,14 +195,14 @@ class Contracts :   public Type,
     public:
         //constructors
         Contracts()=default;
-        Contracts(  string_view type,
+        Contracts(  string_view type_t,
                     string_view transaction_ID,
                     string_view reciever_wallet,
                     string_view sender_wallet,
                     string_view sender_signature,
                     double data,
                     double reward):
-            Type(type),
+            Type_t(type_t),
             Transaction_ID(transaction_ID),
             Reciever_Wallet(reciever_wallet),
             Sender_Wallet(sender_wallet),
@@ -215,7 +215,7 @@ class Contracts :   public Type,
 
         //printer
         void print_contract(){
-            cout << "type: " << get_type() << endl;
+            cout << "types: " << get_type_t() << endl;
             cout << "transaction ID: " << get_transaction_ID() << endl;
             cout << "reciever wallet: " << get_reciever_wallet() << endl;
             cout << "sender wallet: " << get_sender_wallet() << endl;
