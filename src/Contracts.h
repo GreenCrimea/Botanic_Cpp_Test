@@ -13,13 +13,20 @@ Sender_Signature, Data, Reward
 */
 #include <string_view>
 #include <string>
-#include "C_Type.h"
-#include "C_Transaction_ID.h"
-#include "C_Reciever_Wallet.h"
-#include "C_Sender_Wallet.h"
-#include "C_Sender_Signature.h"    
-#include "C_Data.h"          
-#include "C_Reward.h"              
+//#include "C_Type.h"
+//#include "C_Transaction_ID.h"
+//#include "C_Reciever_Wallet.h"
+//#include "C_Sender_Wallet.h"
+//#include "C_Sender_Signature.h"     
+//#include "C_Data.h"          
+//#include "C_Reward.h"
+#include "C_Type.cpp"
+#include "C_Transaction_ID.cpp"
+#include "C_Reciever_Wallet.cpp"
+#include "C_Sender_Wallet.cpp"
+#include "C_Sender_Signature.cpp"    
+#include "C_Data.cpp"          
+#include "C_Reward.cpp"
 using namespace std;
 
 class Contracts :   public Type, 
@@ -33,7 +40,7 @@ class Contracts :   public Type,
 
     public:
         //constructors
-        Contracts();
+        Contracts()=default;
         Contracts(  string_view type,
                     string_view transaction_ID,
                     string_view reciever_wallet,

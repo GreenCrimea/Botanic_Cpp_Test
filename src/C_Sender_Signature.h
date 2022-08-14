@@ -16,7 +16,7 @@ class Sender_Signature{
 
     public:
         //constructor
-        Sender_Signature();
+        Sender_Signature()=default;
         Sender_Signature(string_view signature);
 
         //destructor

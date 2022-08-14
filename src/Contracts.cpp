@@ -5,10 +5,18 @@ Contracts Function Definitions
 #include <string_view>
 #include <string>
 #include "Contracts.h"
+#include <string_view>
+#include <string>
+//#include "C_Type.h"
+//#include "C_Transaction_ID.h"
+//#include "C_Reciever_Wallet.h"
+//#include "C_Sender_Wallet.h"
+//#include "C_Sender_Signature.h"    
+//#include "C_Data.h"          
+//#include "C_Reward.h" 
+#include "Contracts.h"
 using namespace std;
 
-//constructors
-Contracts::Contracts() = default;
 
 //printer
 void Contracts::print_contract(){

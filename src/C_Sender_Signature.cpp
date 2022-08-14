@@ -7,9 +7,6 @@ C_Sender_Signature Function Definitions
 using namespace std;
 
 
-//constructor
-Sender_Signature::Sender_Signature() = default;
-
 Sender_Signature::Sender_Signature(string_view signature){
     this->signature = signature;
 }

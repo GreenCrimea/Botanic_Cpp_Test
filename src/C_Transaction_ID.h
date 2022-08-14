@@ -16,7 +16,7 @@ class Transaction_ID{
 
     public:
         //constructor
-        Transaction_ID();
+        Transaction_ID()=default;
         Transaction_ID(string_view transaction_ID);
 
         //destructor

@@ -7,9 +7,6 @@ C_Sender_Wallet Function Definitions
 using namespace std;
 
 
-//constructor
-Sender_Wallet::Sender_Wallet() = default;
-
 Sender_Wallet::Sender_Wallet(string_view wallet){
     this->wallet = wallet;
 }

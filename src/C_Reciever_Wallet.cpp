@@ -7,9 +7,6 @@ C_Reciever_Wallet Function Definitions
 using namespace std;
 
 
-//constructor
-Reciever_Wallet::Reciever_Wallet() = default;
-
 Reciever_Wallet::Reciever_Wallet(string_view wallet){
     this->wallet = wallet;
 }

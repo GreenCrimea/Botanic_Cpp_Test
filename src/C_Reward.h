@@ -14,7 +14,7 @@ class Reward {
 
     public:
         //constructor
-        Reward();
+        Reward()=default;
         Reward(double reward_value);
 
         //destructor

@@ -15,7 +15,7 @@ class Data {
 
     public:
         //constructor
-        Data();
+        Data()=default;
         Data(double data_value);
 
         //destructor

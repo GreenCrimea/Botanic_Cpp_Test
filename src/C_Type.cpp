@@ -7,11 +7,8 @@ C_TypeFunction Definitions
 using namespace std;
 
 
-//constructor
-Type::Type() = default;
-
 Type::Type(string_view type){
-    this->type = "TRANSACTION";
+    this->type = type;
 }
 
 //getter

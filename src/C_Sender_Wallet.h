@@ -16,7 +16,7 @@ class Sender_Wallet{
 
     public:
         //constructor
-        Sender_Wallet();
+        Sender_Wallet()=default;
         Sender_Wallet(string_view wallet);
 
         //destructor

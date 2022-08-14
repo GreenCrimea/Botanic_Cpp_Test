@@ -17,7 +17,7 @@ class Type{
 
     public:
         //constructor
-        Type();
+        Type()=default;
         Type(string_view transaction_ID);
 
         //destructor

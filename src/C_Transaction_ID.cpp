@@ -7,9 +7,6 @@ C_Transaction_ID Function Definitions
 using namespace std;
 
 
-//constructor
-Transaction_ID::Transaction_ID() = default;
-
 Transaction_ID::Transaction_ID(string_view transaction_ID){
     this->transaction_ID = transaction_ID;
 }
