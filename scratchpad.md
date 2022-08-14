@@ -7,7 +7,7 @@ Blockchain
         ||--------> Index
         ||--------> Timestamp
         ||--------> Proof
-        ||--------> Previous_hash
+        ||--------> Previous_proof
         |\--------> Contracts
                 ||
                 ||--------> Type

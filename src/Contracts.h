@@ -190,8 +190,7 @@ class Contracts :   public Type,
                     public Sender_Wallet,
                     public Sender_Signature,
                     public Data,
-                    public Reward
-                    {
+                    public Reward {
 
     public:
         //constructors
@@ -216,8 +215,6 @@ class Contracts :   public Type,
 
         //printer
         void print_contract(){
-            cout << "CONTRACT" << endl;
-            cout << "===============" << endl;
             cout << "type: " << get_type() << endl;
             cout << "transaction ID: " << get_transaction_ID() << endl;
             cout << "reciever wallet: " << get_reciever_wallet() << endl;
@@ -227,5 +224,3 @@ class Contracts :   public Type,
             cout << "reward: " << get_reward_value() << endl;
         }
 };
-
-
