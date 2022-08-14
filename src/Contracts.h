@@ -21,13 +21,17 @@ class Data {
     public:
         //constructor
         Data()=default;
-        Data(double data_value);
+        Data(double data_value){
+            this->data_value = data_value;
+        }
 
         //destructor
         ~Data();
 
         //getter
-        double get_data_value();
+        double get_data_value(){
+            return data_value;
+        }
 
     private:
 
@@ -41,13 +45,17 @@ class Reciever_Wallet{
     public:
         //constructor
         Reciever_Wallet()=default;
-        Reciever_Wallet(string_view wallet);
+        Reciever_Wallet(string_view wallet){
+            this->wallet = wallet;
+        }
 
         //destructor
         ~Reciever_Wallet();
 
         //getter
-        string get_reciever_wallet();
+        string get_reciever_wallet(){
+            return wallet;
+        }
 
     private:
 
@@ -61,13 +69,17 @@ class Reward {
     public:
         //constructor
         Reward()=default;
-        Reward(double reward_value);
+        Reward(double reward_value){
+            this->reward_value = reward_value;
+        }
 
         //destructor
         ~Reward();
 
         //getter
-        double get_reward_value();
+        double get_reward_value(){
+            return reward_value;
+        }
 
     private:
 
@@ -81,13 +93,17 @@ class Sender_Signature{
     public:
         //constructor
         Sender_Signature()=default;
-        Sender_Signature(string_view signature);
+        Sender_Signature(string_view signature){
+            this->signature = signature;
+        }
 
         //destructor
         ~Sender_Signature();
 
         //getter
-        string get_sender_signature();
+        string get_sender_signature(){
+            return signature;
+        }
 
     private:
 
@@ -101,13 +117,17 @@ class Sender_Wallet{
     public:
         //constructor
         Sender_Wallet()=default;
-        Sender_Wallet(string_view wallet);
+        Sender_Wallet(string_view wallet){
+            this->wallet = wallet;
+        }
 
         //destructor
         ~Sender_Wallet();
 
         //getter
-        string get_sender_wallet();
+        string get_sender_wallet(){
+            return wallet;
+        }
 
     private:
 
@@ -121,13 +141,17 @@ class Transaction_ID{
     public:
         //constructor
         Transaction_ID()=default;
-        Transaction_ID(string_view transaction_ID);
+        Transaction_ID(string_view transaction_ID){
+            this->transaction_ID = transaction_ID;
+        }
 
         //destructor
         ~Transaction_ID();
 
         //getter
-        string get_transaction_ID();
+        string get_transaction_ID(){
+            return transaction_ID;
+        }
 
     private:
 
@@ -141,13 +165,17 @@ class Type{
     public:
         //constructor
         Type()=default;
-        Type(string_view transaction_ID);
+        Type(string_view type){
+            this->type = type;
+        }
 
         //destructor
         ~Type();
 
         //getter
-        string get_type();
+        string get_type(){
+            return type;
+        }
 
     private:
 
@@ -187,7 +215,17 @@ class Contracts :   public Type,
         ~Contracts();
 
         //printer
-        void print_contract();
+        void print_contract(){
+            cout << "CONTRACT" << endl;
+            cout << "===============" << endl;
+            cout << "type: " << get_type() << endl;
+            cout << "transaction ID: " << get_transaction_ID() << endl;
+            cout << "reciever wallet: " << get_reciever_wallet() << endl;
+            cout << "sender wallet: " << get_sender_wallet() << endl;
+            cout << "sender signature: " << get_sender_signature() << endl;
+            cout << "data: " << get_data_value() << endl;
+            cout << "reward: " << get_reward_value() << endl;
+        }
 };
 
 
