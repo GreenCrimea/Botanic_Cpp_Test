@@ -5,17 +5,84 @@ Contracts Function Definitions
 #include <string_view>
 #include <string>
 #include "Contracts.h"
-#include <string_view>
-#include <string>
-//#include "C_Type.h"
-//#include "C_Transaction_ID.h"
-//#include "C_Reciever_Wallet.h"
-//#include "C_Sender_Wallet.h"
-//#include "C_Sender_Signature.h"    
-//#include "C_Data.h"          
-//#include "C_Reward.h" 
-#include "Contracts.h"
 using namespace std;
+
+
+Data::Data(double data_value){
+    this->data_value = data_value;
+}
+
+//getter
+double Data::get_data_value(){
+    return data_value;
+}
+
+
+
+Reciever_Wallet::Reciever_Wallet(string_view wallet){
+    this->wallet = wallet;
+}
+
+//getter
+string Reciever_Wallet::get_reciever_wallet(){
+    return wallet;
+}
+
+
+
+Reward::Reward(double reward_value){
+    this->reward_value = reward_value;
+}
+
+//getter
+double Reward::get_reward_value(){
+    return reward_value;
+}
+
+
+
+Sender_Signature::Sender_Signature(string_view signature){
+    this->signature = signature;
+}
+
+//getter
+string Sender_Signature::get_sender_signature(){
+    return signature;
+}
+
+
+
+Sender_Wallet::Sender_Wallet(string_view wallet){
+    this->wallet = wallet;
+}
+
+//getter
+string Sender_Wallet::get_sender_wallet(){
+    return wallet;
+}
+
+
+
+Transaction_ID::Transaction_ID(string_view transaction_ID){
+    this->transaction_ID = transaction_ID;
+}
+
+//getter
+string Transaction_ID::get_transaction_ID(){
+    return transaction_ID;
+}
+
+
+
+Type::Type(string_view type){
+    this->type = type;
+}
+
+//getter
+string Type::get_type(){
+    return type;
+}
+
 
 
 //printer

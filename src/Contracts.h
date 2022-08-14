@@ -13,21 +13,148 @@ Sender_Signature, Data, Reward
 */
 #include <string_view>
 #include <string>
-//#include "C_Type.h"
-//#include "C_Transaction_ID.h"
-//#include "C_Reciever_Wallet.h"
-//#include "C_Sender_Wallet.h"
-//#include "C_Sender_Signature.h"     
-//#include "C_Data.h"          
-//#include "C_Reward.h"
-#include "C_Type.cpp"
-#include "C_Transaction_ID.cpp"
-#include "C_Reciever_Wallet.cpp"
-#include "C_Sender_Wallet.cpp"
-#include "C_Sender_Signature.cpp"    
-#include "C_Data.cpp"          
-#include "C_Reward.cpp"
 using namespace std;
+
+
+class Data {
+
+    public:
+        //constructor
+        Data()=default;
+        Data(double data_value);
+
+        //destructor
+        ~Data();
+
+        //getter
+        double get_data_value();
+
+    private:
+
+        //value
+        double data_value{0};
+};
+
+
+class Reciever_Wallet{
+
+    public:
+        //constructor
+        Reciever_Wallet()=default;
+        Reciever_Wallet(string_view wallet);
+
+        //destructor
+        ~Reciever_Wallet();
+
+        //getter
+        string get_reciever_wallet();
+
+    private:
+
+        //value
+        string wallet{"null"};
+};
+
+
+class Reward {
+
+    public:
+        //constructor
+        Reward()=default;
+        Reward(double reward_value);
+
+        //destructor
+        ~Reward();
+
+        //getter
+        double get_reward_value();
+
+    private:
+
+        //value
+        double reward_value{0};
+};
+
+
+class Sender_Signature{
+
+    public:
+        //constructor
+        Sender_Signature()=default;
+        Sender_Signature(string_view signature);
+
+        //destructor
+        ~Sender_Signature();
+
+        //getter
+        string get_sender_signature();
+
+    private:
+
+        //value
+        string signature{"null"};
+};
+
+
+class Sender_Wallet{
+
+    public:
+        //constructor
+        Sender_Wallet()=default;
+        Sender_Wallet(string_view wallet);
+
+        //destructor
+        ~Sender_Wallet();
+
+        //getter
+        string get_sender_wallet();
+
+    private:
+
+        //value
+        string wallet{"null"};
+};
+
+
+class Transaction_ID{
+
+    public:
+        //constructor
+        Transaction_ID()=default;
+        Transaction_ID(string_view transaction_ID);
+
+        //destructor
+        ~Transaction_ID();
+
+        //getter
+        string get_transaction_ID();
+
+    private:
+
+        //value
+        string transaction_ID{"null"};
+};
+
+
+class Type{
+
+    public:
+        //constructor
+        Type()=default;
+        Type(string_view transaction_ID);
+
+        //destructor
+        ~Type();
+
+        //getter
+        string get_type();
+
+    private:
+
+        //value
+        string type{"TRANSACTION"};
+};
+
 
 class Contracts :   public Type, 
                     public Transaction_ID,
@@ -62,3 +189,5 @@ class Contracts :   public Type,
         //printer
         void print_contract();
 };
+
+
