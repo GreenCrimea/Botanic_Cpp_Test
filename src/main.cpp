@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/headers/Contracts.h"
+#include "Contracts.cpp"
 
 int main() {
 
