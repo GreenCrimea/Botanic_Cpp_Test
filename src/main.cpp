@@ -3,7 +3,18 @@
 #include "Contracts.h"
 using namespace std;
 
+
+int test_1();
+
+
 int main() {
+
+    test_1();
+
+    return 0;
+} 
+
+int test_1(){
 
     string type{"TRANSACTION"};
     string transaction_ID{"87f897f987e7"};

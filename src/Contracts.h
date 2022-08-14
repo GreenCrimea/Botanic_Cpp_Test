@@ -26,7 +26,7 @@ class Data {
         }
 
         //destructor
-        ~Data();
+        ~Data()=default;
 
         //getter
         double get_data_value(){
@@ -50,7 +50,7 @@ class Reciever_Wallet{
         }
 
         //destructor
-        ~Reciever_Wallet();
+        ~Reciever_Wallet()=default;
 
         //getter
         string get_reciever_wallet(){
@@ -74,7 +74,7 @@ class Reward {
         }
 
         //destructor
-        ~Reward();
+        ~Reward()=default;
 
         //getter
         double get_reward_value(){
@@ -98,7 +98,7 @@ class Sender_Signature{
         }
 
         //destructor
-        ~Sender_Signature();
+        ~Sender_Signature()=default;
 
         //getter
         string get_sender_signature(){
@@ -122,7 +122,7 @@ class Sender_Wallet{
         }
 
         //destructor
-        ~Sender_Wallet();
+        ~Sender_Wallet()=default;
 
         //getter
         string get_sender_wallet(){
@@ -146,7 +146,7 @@ class Transaction_ID{
         }
 
         //destructor
-        ~Transaction_ID();
+        ~Transaction_ID()=default;
 
         //getter
         string get_transaction_ID(){
@@ -170,7 +170,7 @@ class Type{
         }
 
         //destructor
-        ~Type();
+        ~Type()=default;
 
         //getter
         string get_type(){
@@ -212,7 +212,7 @@ class Contracts :   public Type,
             Reward(reward){}
 
         //destructor
-        ~Contracts();
+        ~Contracts()=default;
 
         //printer
         void print_contract(){
