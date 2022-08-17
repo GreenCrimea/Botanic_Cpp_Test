@@ -160,32 +160,8 @@ class Transaction_ID{
 };
 
 
-class Type_t{
 
-    public:
-        //constructor
-        Type_t()=default;
-        Type_t(string_view t_new){
-            type_t = t_new;
-        }
-
-        //destructor
-        ~Type_t()=default;
-
-        //getter
-        string get_type_t(){
-            return type_t;
-        }
-
-    private:
-
-        //value
-        string type_t{"TRANSACTION"};
-};
-
-
-class Contracts :   public Type_t, 
-                    public Transaction_ID,
+class Contracts :   public Transaction_ID,
                     public Reciever_Wallet,
                     public Sender_Wallet,
                     public Sender_Signature,
@@ -195,27 +171,24 @@ class Contracts :   public Type_t,
     public:
         //constructors
         Contracts()=default;
-        Contracts(  string_view type_t,
-                    string_view transaction_ID,
+        Contracts(  string_view transaction_ID,
                     string_view reciever_wallet,
                     string_view sender_wallet,
                     string_view sender_signature,
                     double data,
                     double reward):
-            Type_t(type_t),
             Transaction_ID(transaction_ID),
             Reciever_Wallet(reciever_wallet),
             Sender_Wallet(sender_wallet),
             Sender_Signature(sender_signature),
             Data(data),
             Reward(reward){}
-
+ 
         //destructor
         ~Contracts()=default;
 
         //printer
         void print_contract(){
-            cout << "types: " << get_type_t() << endl;
             cout << "transaction ID: " << get_transaction_ID() << endl;
             cout << "reciever wallet: " << get_reciever_wallet() << endl;
             cout << "sender wallet: " << get_sender_wallet() << endl;

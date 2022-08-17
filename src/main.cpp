@@ -23,7 +23,6 @@ int main() {
 
 Contracts test_1(){
 
-    string types{"TRANSACTION"};
     string transaction_ID{"87f897f987e7"};
     string reciever_wallet{"689fe6a897f"};
     string sender_wallet{"a75ba789c"};
@@ -31,7 +30,7 @@ Contracts test_1(){
     double data{100};
     double reward{10};
 
-    Contracts contract_1(   types, transaction_ID, reciever_wallet, 
+    Contracts contract_1(   transaction_ID, reciever_wallet, 
                             sender_wallet, sender_signature, data, 
                             reward);
 
@@ -42,7 +41,6 @@ Contracts test_1(){
 
 Contracts test_2(){
 
-    string types{"TEST"};
     string transaction_ID{"87f897f987e7"};
     string reciever_wallet{"689fe6a897f"};
     string sender_wallet{"a75ba789c"};
@@ -50,7 +48,7 @@ Contracts test_2(){
     double data{500};
     double reward{50};
 
-    Contracts contract_1(   types, transaction_ID, reciever_wallet, 
+    Contracts contract_1(   transaction_ID, reciever_wallet, 
                             sender_wallet, sender_signature, data, 
                             reward);
 
