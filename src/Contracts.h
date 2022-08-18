@@ -13,7 +13,6 @@ Sender_Signature, Data, Reward
 */
 #include <string_view>
 #include <string>
-using namespace std;
 
 
 class Data {
@@ -45,7 +44,7 @@ class Reciever_Wallet{
     public:
         //constructor
         Reciever_Wallet()=default;
-        Reciever_Wallet(string_view wallet){
+        Reciever_Wallet(std::string_view wallet){
             this->wallet = wallet;
         }
 
@@ -53,14 +52,14 @@ class Reciever_Wallet{
         ~Reciever_Wallet()=default;
 
         //getter
-        string get_reciever_wallet(){
+        std::string get_reciever_wallet(){
             return wallet;
         }
 
     private:
 
         //value
-        string wallet{"null"};
+        std::string wallet{"null"};
 };
 
 
@@ -93,7 +92,7 @@ class Sender_Signature{
     public:
         //constructor
         Sender_Signature()=default;
-        Sender_Signature(string_view signature){
+        Sender_Signature(std::string_view signature){
             this->signature = signature;
         }
 
@@ -101,14 +100,14 @@ class Sender_Signature{
         ~Sender_Signature()=default;
 
         //getter
-        string get_sender_signature(){
+        std::string get_sender_signature(){
             return signature;
         }
 
     private:
 
         //value
-        string signature{"null"};
+        std::string signature{"null"};
 };
 
 
@@ -117,7 +116,7 @@ class Sender_Wallet{
     public:
         //constructor
         Sender_Wallet()=default;
-        Sender_Wallet(string_view wallet){
+        Sender_Wallet(std::string_view wallet){
             this->wallet = wallet;
         }
 
@@ -125,14 +124,14 @@ class Sender_Wallet{
         ~Sender_Wallet()=default;
 
         //getter
-        string get_sender_wallet(){
+        std::string get_sender_wallet(){
             return wallet;
         }
 
     private:
 
         //value
-        string wallet{"null"};
+        std::string wallet{"null"};
 };
 
 
@@ -141,7 +140,7 @@ class Transaction_ID{
     public:
         //constructor
         Transaction_ID()=default;
-        Transaction_ID(string_view transaction_ID){
+        Transaction_ID(std::string_view transaction_ID){
             this->transaction_ID = transaction_ID;
         }
 
@@ -149,14 +148,14 @@ class Transaction_ID{
         ~Transaction_ID()=default;
 
         //getter
-        string get_transaction_ID(){
+        std::string get_transaction_ID(){
             return transaction_ID;
         }
 
     private:
 
         //value
-        string transaction_ID{"null"};
+        std::string transaction_ID{"null"};
 };
 
 
@@ -171,10 +170,10 @@ class Contracts :   public Transaction_ID,
     public:
         //constructors
         Contracts()=default;
-        Contracts(  string_view transaction_ID,
-                    string_view reciever_wallet,
-                    string_view sender_wallet,
-                    string_view sender_signature,
+        Contracts(  std::string_view transaction_ID,
+                    std::string_view reciever_wallet,
+                    std::string_view sender_wallet,
+                    std::string_view sender_signature,
                     double data,
                     double reward):
             Transaction_ID(transaction_ID),
@@ -189,11 +188,11 @@ class Contracts :   public Transaction_ID,
 
         //printer
         void print_contract(){
-            cout << "transaction ID: " << get_transaction_ID() << endl;
-            cout << "reciever wallet: " << get_reciever_wallet() << endl;
-            cout << "sender wallet: " << get_sender_wallet() << endl;
-            cout << "sender signature: " << get_sender_signature() << endl;
-            cout << "data: " << get_data_value() << endl;
-            cout << "reward: " << get_reward_value() << endl;
+            std::cout << "transaction ID: " << get_transaction_ID() << "\n";
+            std::cout << "reciever wallet: " << get_reciever_wallet() << "\n";
+            std::cout << "sender wallet: " << get_sender_wallet() << "\n";
+            std::cout << "sender signature: " << get_sender_signature() << "\n";
+            std::cout << "data: " << get_data_value() << "\n";
+            std::cout << "reward: " << get_reward_value() << "\n";
         }
 };

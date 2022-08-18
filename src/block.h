@@ -11,7 +11,6 @@ Inherits Index, Timestamp, Proof, Previous_proof, Contracts_Array
 #include <string_view>
 #include <string>
 #include "Contracts.h"
-using namespace std;
 const int BLOCKSIZE {2};
 
 class Index {
@@ -43,7 +42,7 @@ class Timestamp {
     public:
         //constructor
         Timestamp()=default;
-        Timestamp(string_view timestamp){
+        Timestamp(std::string_view timestamp){
             this->timestamp = timestamp;
         }
 
@@ -51,14 +50,14 @@ class Timestamp {
         ~Timestamp()=default;
 
         //getter
-        string get_timestamp(){
+        std::string get_timestamp(){
             return timestamp;
         }
 
     private:
 
         //value
-        string timestamp{"null"};
+        std::string timestamp{"null"};
 };
 
 
@@ -67,7 +66,7 @@ class Proof {
     public:
         //constructor
         Proof()=default;
-        Proof(string_view proof){
+        Proof(std::string_view proof){
             this->proof = proof;
         }
 
@@ -75,14 +74,14 @@ class Proof {
         ~Proof()=default;
 
         //getter
-        string get_proof(){
+        std::string get_proof(){
             return proof;
         }
 
     private:
 
         //value
-        string proof{"null"};
+        std::string proof{"null"};
 };
 
 
@@ -91,7 +90,7 @@ class Previous_Proof {
     public:
         //constructor
         Previous_Proof()=default;
-        Previous_Proof(string_view previous_proof){
+        Previous_Proof(std::string_view previous_proof){
             this->previous_proof = previous_proof;
         }
 
@@ -99,14 +98,14 @@ class Previous_Proof {
         ~Previous_Proof()=default;
 
         //getter
-        string get_previous_proof(){
+        std::string get_previous_proof(){
             return previous_proof;
         }
 
     private:
 
         //value
-        string previous_proof{"null"};
+        std::string previous_proof{"null"};
 };
 
 
@@ -140,9 +139,9 @@ class Block :   public Index,
         //constructors
         Block()=default;
         Block(  double index,
-                string_view timestamp,
-                string_view proof,
-                string_view previous_proof):
+                std::string_view timestamp,
+                std::string_view proof,
+                std::string_view previous_proof):
             Index(index),
             Timestamp(timestamp),
             Proof(proof),
@@ -154,16 +153,16 @@ class Block :   public Index,
 
         //printer
         void print_block(){
-            cout << "BLOCK" << endl;
-            cout << "=============" << endl;
-            cout << "index: " << get_index_value() << endl;
-            cout << "timestamp: " << get_timestamp() << endl;
-            cout << "proof: " << get_proof() << endl;
-            cout << "Previous proof: " << get_previous_proof() << endl;
-            cout << "Contracts: " << endl;
+            std::cout << "BLOCK" << "\n";
+            std::cout << "=============" << "\n";
+            std::cout << "index: " << get_index_value() << "\n";
+            std::cout << "timestamp: " << get_timestamp() << "\n";
+            std::cout << "proof: " << get_proof() << "\n";
+            std::cout << "Previous proof: " << get_previous_proof() << "\n";
+            std::cout << "Contracts: \n";
             for(int i; i < BLOCKSIZE; ++i){
-                cout << "contract " << i << endl;     
-                cout << "===============" << endl;
+                std::cout << "contract " << i << "\n";
+                std::cout << "===============\n";
                 get_contracts_array(i).print_contract();
             }
         }
