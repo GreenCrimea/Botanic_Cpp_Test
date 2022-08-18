@@ -34,8 +34,6 @@ Contracts test_1(){
                             sender_wallet, sender_signature, data, 
                             reward);
 
-    contract_1.print_contract();
-
     return contract_1; 
 }
 
@@ -51,8 +49,6 @@ Contracts test_2(){
     Contracts contract_2(   transaction_ID, reciever_wallet, 
                             sender_wallet, sender_signature, data, 
                             reward);
-
-    contract_2.print_contract();
 
     return contract_2; 
 }

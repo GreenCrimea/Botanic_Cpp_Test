@@ -160,10 +160,12 @@ class Block :   public Index,
             std::cout << "proof: " << get_proof() << "\n";
             std::cout << "Previous proof: " << get_previous_proof() << "\n";
             std::cout << "Contracts: \n";
-            for(int i; i < BLOCKSIZE; ++i){
+            std::cout << "---------------\n";
+            for(int i = 0; i < BLOCKSIZE; ++i){
                 std::cout << "contract " << i << "\n";
                 std::cout << "===============\n";
                 get_contracts_array(i).print_contract();
+                std::cout << "---------------\n";
             }
         }
 
