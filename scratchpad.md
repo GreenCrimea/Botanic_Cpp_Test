@@ -10,7 +10,6 @@ Blockchain
         ||--------> Previous_proof
         |\--------> Contracts
                 ||
-                ||--------> Type
                 ||--------> Transaction_ID
                 ||--------> Reciever_wallet
                 ||--------> Sender_wallet
