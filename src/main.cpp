@@ -13,10 +13,13 @@ void test_3(Contracts a, Contracts b);
 
 int main() {
 
-    Contracts contract_1 = test_1();
-    Contracts contract_2 = test_2();
+    //Contracts contract_1 = test_1();
+    //Contracts contract_2 = test_2();
 
-    test_3(contract_1, contract_2);
+    //test_3(contract_1, contract_2);
+    double difficulty = 0;
+    Hashing_func hasher(difficulty);
+    hasher.hash_block();
 
     return 0;
 } 

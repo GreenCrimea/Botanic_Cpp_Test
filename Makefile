@@ -1,14 +1,12 @@
 CXX		  := g++
-CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb
+CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb 
 
 BIN		:= bin
 SRC		:= src
 INCLUDE	:= include
 LIB		:= lib
-CLASSES := src/classes
-HEADERS := src/headers
 
-LIBRARIES	:=
+LIBRARIES	:= -lcryptopp
 EXECUTABLE	:= main
 
 

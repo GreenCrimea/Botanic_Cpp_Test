@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/gc/VS-Projects/Botanic++'
+g++ -Wall -Wextra -std=c++17 -ggdb  -Iinclude -Llib src/main.cpp -o bin/main -lcryptopp
+make: Leaving directory '/home/gc/VS-Projects/Botanic++'
+ 
