@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "block.h"
+#include "hash.h"
 
 
 
