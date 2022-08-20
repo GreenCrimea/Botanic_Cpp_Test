@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug 19 21:46:57 2022
+# Make data base, printed on Sat Aug 20 15:39:49 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ XDG_DATA_DIRS = /usr/share/Lubuntu:/usr/local/share:/usr/share:/var/lib/snapd/de
 # environment
 VSCODE_CODE_CACHE_PATH = /home/gc/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
 # environment
 LANG = C
 # environment
@@ -69,7 +69,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXTMUwzp/agent.1712
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXao0f2V/agent.1686
 # default
 .SHELLFLAGS := -c
 # environment
@@ -83,7 +83,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 16893
+VSCODE_PID = 7775
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -181,7 +181,7 @@ LC_MEASUREMENT = en_AU.UTF-8
 # makefile (from 'Makefile', line 2)
 CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb 
 # environment
-SSH_AGENT_PID = 1758
+SSH_AGENT_PID = 1733
 # environment
 _ = /usr/share/code/code
 # environment
@@ -238,9 +238,9 @@ LC_IDENTIFICATION = en_AU.UTF-8
 # Directories
 
 # src (device 2050, inode 3276802): 198 files, no impossibilities.
-# . (device 2050, inode 3148062): 12 files, no impossibilities.
+# . (device 2050, inode 3148062): 13 files, no impossibilities.
 
-# 210 files, no impossibilities in 2 directories.
+# 211 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -334,12 +334,12 @@ run: clean all
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 217 / storage = 1918 B / avg = 8 B
-# current buf: size = 8162 B / used = 1918 B / count = 217 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 218 / storage = 1929 B / avg = 8 B
+# current buf: size = 8162 B / used = 1929 B / count = 218 / avg = 8 B
 
-# strcache performance: lookups = 233 / hit rate = 6%
+# strcache performance: lookups = 234 / hit rate = 6%
 # hash-table stats:
-# Load=217/8192=3%, Rehash=0, Collisions=3/233=1%
-# Finished Make data base on Fri Aug 19 21:46:57 2022
+# Load=218/8192=3%, Rehash=0, Collisions=3/234=1%
+# Finished Make data base on Sat Aug 20 15:39:49 2022
 
  
