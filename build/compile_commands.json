@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gc/VS-Projects/Botanic++/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/botanic++.dir/src/main.cpp.o -c /home/gc/VS-Projects/Botanic++/src/main.cpp",
+  "file": "/home/gc/VS-Projects/Botanic++/src/main.cpp"
+}
+]
