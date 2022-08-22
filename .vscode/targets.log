@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 16:05:53 2022
+# Make data base, printed on Mon Aug 22 20:05:08 2022
 
 # Variables
 
@@ -14,9 +14,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
-# makefile (from 'Makefile', line 5)
- 
-SRC := src
 # environment
 LC_NAME = en_AU.UTF-8
 # environment
@@ -79,8 +76,8 @@ XDG_CONFIG_DIRS = /etc/xdg/xdg-Lubuntu:/etc/xdg:/etc:/usr/share
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 XDG_SESSION_DESKTOP = 
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
@@ -101,14 +98,10 @@ QT_QPA_PLATFORMTHEME = lxqt
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# makefile (from 'Makefile', line 7)
-LIB := lib
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
-# makefile (from 'Makefile', line 6)
-INCLUDE := include
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -168,27 +161,21 @@ SAL_VCL_QT5_USE_CAIRO = true
 # environment
 XDG_VTNR = 1
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := 
 # environment
 DISPLAY = :0
 # environment
 USER = gc
 # default
 MAKE_VERSION := 4.3
-# makefile (from 'Makefile', line 10)
-EXECUTABLE := main
 # environment
 LC_MEASUREMENT = en_AU.UTF-8
-# makefile (from 'Makefile', line 2)
-CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb 
 # environment
 SSH_AGENT_PID = 1733
 # environment
 _ = /usr/share/code/code
 # environment
 LC_PAPER = en_AU.UTF-8
-# makefile (from 'Makefile', line 4)
-BIN := bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -199,8 +186,6 @@ GTK_OVERLAY_SCROLLING = 0
 QT_PLATFORM_PLUGIN = lxqt
 # environment
 XDG_SESSION_CLASS = user
-# makefile (from 'Makefile', line 9)
-LIBRARIES := -lcryptopp
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -223,14 +208,12 @@ SUFFIXES :=
 XDG_CACHE_HOME = /home/gc/.cache
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# makefile (from 'Makefile', line 1)
-CXX := g++
 # environment
 XDG_MENU_PREFIX = lxqt-
 # environment
 LC_IDENTIFICATION = en_AU.UTF-8
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=11/152=7%
+# Load=101/1024=10%, Rehash=0, Collisions=4/128=3%
 
 # Pattern-specific Variable Values
 
@@ -238,10 +221,9 @@ LC_IDENTIFICATION = en_AU.UTF-8
 
 # Directories
 
-# src (device 2050, inode 3276802): 6 files, no impossibilities.
-# . (device 2050, inode 3148062): 13 files, no impossibilities.
+# . (device 2050, inode 3148062): 12 files, no impossibilities.
 
-# 19 files, no impossibilities in 2 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -252,51 +234,9 @@ LC_IDENTIFICATION = en_AU.UTF-8
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-19 21:32:41.100392713
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-src/main.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-08-19 21:02:54.168998348
-#  File has been updated.
-#  Successfully updated.
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
-	-rm $(BIN)/*
-
-bin/main: src/main.cpp
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin/main
-# automatic
-# * := 
-# automatic
-# < := src/main.cpp
-# automatic
-# + := src/main.cpp
-# automatic
-# % := 
-# automatic
-# ^ := src/main.cpp
-# automatic
-# ? := src/main.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=6/18=33%
-#  recipe to execute (from 'Makefile', line 20):
- 
-	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -304,43 +244,43 @@ bin/main: src/main.cpp
 #  Modification time never checked.
 #  File has not been updated.
 
-all: bin/main
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
-
-run: clean all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
-	clear
-	./$(BIN)/$(EXECUTABLE)
 
 # Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 212 B / avg = 8 B
-# current buf: size = 8162 B / used = 212 B / count = 26 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 171 B / avg = 8 B
+# current buf: size = 8162 B / used = 171 B / count = 20 / avg = 8 B
 
-# strcache performance: lookups = 42 / hit rate = 38%
+# strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Mon Aug 22 16:05:53 2022
+# Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
+# Finished Make data base on Mon Aug 22 20:05:08 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+

@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+-DCMAKE_TOOLCHAIN_FILE:STRING=/home/gc/vcpkg/x64-linux/share/cryptopp/cryptopp-config.cmake
+
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
@@ -220,6 +223,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=/home/gc/vcpkg/scripts/buildsystems/vcpkg.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -313,6 +319,9 @@ botanic++_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 botanic++_SOURCE_DIR:STATIC=/home/gc/VS-Projects/Botanic++
+
+//The directory containing a CMake configuration file for cryptopp.
+cryptopp_DIR:PATH=cryptopp_DIR-NOTFOUND
 
 
 ########################

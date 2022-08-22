@@ -2,6 +2,18 @@
 	"entries" : 
 	[
 		{
+			"name" : "-DCMAKE_TOOLCHAIN_FILE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "STRING",
+			"value" : "/home/gc/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
 			"name" : "BUILD_TESTING",
 			"properties" : 
 			[
@@ -1180,6 +1192,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/strip"
+		},
+		{
+			"name" : "CMAKE_TOOLCHAIN_FILE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "STRING",
+			"value" : "/home/gc/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
 			"name" : "CMAKE_UNAME",

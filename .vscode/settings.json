@@ -8,6 +8,6 @@
     },
     "terminal.integrated.shell.windows": "cmd.exe",
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "/home/gc/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "-DCMAKE_TOOLCHAIN_FILE": "/home/gc/vcpkg/x64-linux/share/cryptopp/cryptopp-config.cmake"
     }
 }
