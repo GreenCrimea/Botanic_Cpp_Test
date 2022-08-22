@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 20 15:39:49 2022
+# Make data base, printed on Mon Aug 22 16:05:53 2022
 
 # Variables
 
@@ -15,6 +15,7 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 5)
+ 
 SRC := src
 # environment
 LC_NAME = en_AU.UTF-8
@@ -83,7 +84,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 7775
+VSCODE_PID = 20232
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -237,10 +238,10 @@ LC_IDENTIFICATION = en_AU.UTF-8
 
 # Directories
 
-# src (device 2050, inode 3276802): 198 files, no impossibilities.
+# src (device 2050, inode 3276802): 6 files, no impossibilities.
 # . (device 2050, inode 3148062): 13 files, no impossibilities.
 
-# 211 files, no impossibilities in 2 directories.
+# 19 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -279,7 +280,6 @@ bin/main: src/main.cpp
 # @ := bin/main
 # automatic
 # * := 
- 
 # automatic
 # < := src/main.cpp
 # automatic
@@ -295,6 +295,7 @@ bin/main: src/main.cpp
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=6/18=33%
 #  recipe to execute (from 'Makefile', line 20):
+ 
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
 
 # Not a target:
@@ -334,12 +335,12 @@ run: clean all
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 218 / storage = 1929 B / avg = 8 B
-# current buf: size = 8162 B / used = 1929 B / count = 218 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 212 B / avg = 8 B
+# current buf: size = 8162 B / used = 212 B / count = 26 / avg = 8 B
 
-# strcache performance: lookups = 234 / hit rate = 6%
+# strcache performance: lookups = 42 / hit rate = 38%
 # hash-table stats:
-# Load=218/8192=3%, Rehash=0, Collisions=3/234=1%
-# Finished Make data base on Sat Aug 20 15:39:49 2022
+# Load=26/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Mon Aug 22 16:05:53 2022
 
  
