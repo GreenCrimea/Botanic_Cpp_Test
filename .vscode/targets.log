@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 20:05:08 2022
+# Make data base, printed on Mon Aug 22 20:06:54 2022
 
 # Variables
 
@@ -33,7 +35,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/gc/VS-Projects/Botanic++
+PWD = /home/gc/VS-Projects/old_Botanic
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -57,7 +59,7 @@ XAUTHORITY = /home/gc/.Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/gc/VS-Projects/Botanic++
+CURDIR := /home/gc/VS-Projects/old_Botanic
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
@@ -279,8 +281,6 @@ GNUmakefile:
 # strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Mon Aug 22 20:05:08 2022
+# Finished Make data base on Mon Aug 22 20:06:54 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-
